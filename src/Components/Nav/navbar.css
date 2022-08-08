@@ -1,0 +1,29 @@
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0 ;
+    background-color: aqua;
+    padding: 30px;
+  }
+  .nav-options{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex ;
+    gap : 2rem ; 
+  }
+
+  li a::after{
+    content:'' ; 
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: #ffbd00 ;
+  }
+
+  li a:hover::after{
+    width: 60%;
+  }
+ 
